@@ -1,13 +1,23 @@
-1=<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAVA SCRIPT BASICSt</title>
+    <title>Sum of N Numbers</title>
 </head>
 <body>
 
-    <script src="script.js"></script>
-    
+    <h2>Sum of N Numbers</h2>
+
+    <script>
+        let n = parseInt(prompt("Enter a number N:"));
+
+        let sum = 0;
+
+        for(let i = 1; i <= n; i++) {
+            sum += i;
+        }
+
+        document.write("<h3>Sum of numbers from 1 to " + n + " is: " + sum + "</h3>");
+    </script>
+
 </body>
 </html>

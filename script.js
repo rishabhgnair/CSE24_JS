@@ -1,35 +1,9 @@
-console.log("Hello World!")
-document.write("Hello World!")
-var num = 10 ;
-console.log(num) ;
-console.log (typeof(num)) ;
+let n = parseInt(prompt("Enter a number N:"));
 
-let greeting = "hello, world !" ;
-console.log(greeting ) ;
-let name;
-console.log(name);
+        let sum = 0;
 
-var person ={
-    name : 'rishabh goel nair' ,
-    age : '20' ,
-    title : 'student' ,
+        for(let i = 1; i <= n; i++) {
+            sum += i;
+        }
 
-}
-const syml = Symbol('symbol') ;
-console.log(syml) ;
-const sym2 = Symbol('symbol') ;
-console.log(sym2) ;
-const a = 6 , b = 7 ;
-console.log(a == 6 && b == 7) ;
-console.log(a == 6 || b == 8) ;
-
-// for loop
-for (let i = 0 ; i < 5 ; i++){
-    console.log(i) ;
-}
-var counter ;
-for (counter = 0 ; counter < 5 ; counter++){
-    document.write("current counter value is : " + counter + "<br>");
-    console.log(counter) ;
-}
-
+        document.write("<h3>Sum of numbers from 1 to " + n + " is: " + sum + "</h3>");
